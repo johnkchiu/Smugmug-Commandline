@@ -33,4 +33,6 @@ Options:
 
 Example
 =======
+```
 $ ./smugmugCommandline.py -a [XXX] -e [XXX] -p [XXX] -t 'My Defaults' -c Other -s Testing -f ~/Pictures/2012\ -\ 08\ -\ Mike\'s\ Vegas\ Trip
+```
