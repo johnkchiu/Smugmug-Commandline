@@ -15,7 +15,7 @@ $ chmod a+x smugmugCommandline.py
 
 Usage
 =====
-Usage: 
+```
   Commandline tool for Smugmug.
 		smugmugCommandline.py [option]
 
@@ -29,6 +29,7 @@ Options:
   -c CATEGORY     Category name
   -s SUBCATEGORY  Sub-Category name
   -f FOLDER       Folder to upload from (should not have "/" at the end.
+```
 
 Example
 =======
