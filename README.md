@@ -3,7 +3,7 @@ Smugmug-Commandline
 
 A commandline interface for executing some tasks against Smugmug.
 
-(This is built on the work done by https://github.com/chrishoffman/smugpy.)
+(This is built on the work done by https://github.com/chrishoffman/smugpy).
 
 Installation
 ============
