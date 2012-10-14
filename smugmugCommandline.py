@@ -176,7 +176,7 @@ if __name__ == '__main__':
 					log_image_status(filename=filename, status="Uploaded")
 					file_upload += 1
 				except SmugMugException as e:
-					log_image_status(filename=filename, status="Error (" + e.message + ")")
+					log_image_status(filename=filename, status="Error (" + str(e) + ")")
 					file_error += 1
 	
 	# all done
