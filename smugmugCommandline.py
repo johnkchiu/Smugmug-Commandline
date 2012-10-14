@@ -143,8 +143,11 @@ if __name__ == '__main__':
 		# create album
 		template = smcl.template_get(options.template)
 		category = smcl.category_get(options.category)
-		subcategory = smcl.subcategory_get(options.subcategory)
-		album = smcl.album_create(title=album_title, category_id=category['id'], subcategory_id=subcategory['id'], album_template_id=template['id'])
+		if options.subcategory is not None:
+			subcategory = smcl.subcategory_get(options.subcategory)
+			album = smcl.album_create(title=album_title, category_id=category['id'], subcategory_id=subcategory['id'], album_template_id=template['id'])
+		else:
+			album = smcl.album_create(title=album_title, category_id=category['id'], album_template_id=template['id'])
 		album_info = smcl.album_getInfo(album_id=album['id'], album_key=album['Key'])
 		print "Album created: " + album_info['URL']
 	if album is None:
