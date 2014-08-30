@@ -175,7 +175,7 @@ if __name__ == '__main__':
 					response = smcl.smugmug.images_upload(File=filepath, AlbumID=album['id'])
 					log_image_status(filename=filename, status="Uploaded")
 					file_upload += 1
-				except SmugMugException as e:
+				except Exception as e:
 					log_image_status(filename=filename, status="Error (" + str(e) + ")")
 					file_error += 1
 		# stop after 1 level
