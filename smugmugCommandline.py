@@ -18,7 +18,7 @@
 
 __author__ = 'johnkchiu@yahoo.com (John Chiu)'
 __script_name__ = '%prog'
-__version__ = '0.1'
+__version__ = '0.1.1'
 
 from optparse import OptionParser
 from smugpy import SmugMug, SmugMugException
@@ -178,6 +178,8 @@ if __name__ == '__main__':
 				except SmugMugException as e:
 					log_image_status(filename=filename, status="Error (" + str(e) + ")")
 					file_error += 1
+		# stop after 1 level
+		break
 	
 	# all done
 	print "Complete (Total:" + str(file_total) + ", Uploaded:" + str(file_upload) + \
