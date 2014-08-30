@@ -9,7 +9,7 @@ Installation
 ============
 To use it, you must first install smugpy.  Then afterward, just downoad the script, make it executable, and use it.
 ```
-$ wget https://raw.github.com/johnkchiu/Smugmug-Commandline/master/smugmugCommandline.py
+$ wget --no-check-certificate https://raw.githubusercontent.com/johnkchiu/Smugmug-Commandline/master/smugmugCommandline.py
 $ chmod a+x smugmugCommandline.py
 ```
 
